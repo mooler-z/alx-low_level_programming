@@ -1,42 +1,48 @@
 #include <stdio.h>
-#include <stdlib.h>
+
 /**
  * main - Entry
-* Return: 0
+ * Return: 0 (on success)
+ * Author: Mulugeta Z
+ *
+ * Description:
+ * Created:  Mon Feb 20 12:41:33 PM EAT 2023
+ * Filename: 101-print_comb4.c
  */
 int main(void)
 {
-	int c;
-	int d;
-	int e = 0;
+	int left, mid, right, cond, i;
 
-	while (e < 10)
+	left = 0;
+	i = 10;
+	for (; left < i;)
 	{
-		d = 0;
-		while (d < 10)
+		mid = 0;
+		for (; mid < i;)
 		{
-			c = 0;
-			while (c < 10)
+			right = 0;
+			for (; right < i;)
 			{
-				if (c != d && d != e && e < d && d < c)
+				/* printf("left(%d) | mid(%d) | right(%d)\n", left, mid, right); */
+				cond = ((left < mid) && (mid < right));
+				if (cond)
 				{
-					putchar('0' + e);
-					putchar('0' + d);
-					putchar('0' + c);
-
-					if (c + d + e != 9 + 8 + 7)
-					{
-						putchar(',');
-						putchar(' ');
-					}
+					putchar(left + '0');
+					putchar(mid + '0');
+					putchar(right + '0');
 				}
-
-				c++;
+				if (cond && (left < i - 3))
+				{
+					putchar(',');
+					putchar(' ');
+				}
+				right++;
 			}
-			d++;
+			mid++;
 		}
-		e++;
+		left++;
 	}
 	putchar('\n');
 	return (0);
 }
+
