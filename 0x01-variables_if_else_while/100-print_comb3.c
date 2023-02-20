@@ -11,13 +11,14 @@
  */
 int main(void)
 {
-	int left, right, cond;
+	int left, right, cond, i;
 
 	left = 0;
-	for (; left < 10;)
+	i = 10;
+	for (; left < i;)
 	{
 		right = 0;
-		for (; right < 10;)
+		for (; right < i;)
 		{
 			cond = (left != right) && (left < right);
 			if (cond)
@@ -25,7 +26,7 @@ int main(void)
 				putchar(left + '0');
 				putchar(right + '0');
 			}
-			if (cond && left < 8)
+			if (cond && (left < i - 2))
 			{
 				putchar(',');
 				putchar(' ');
