@@ -1,35 +1,40 @@
 #include <stdio.h>
-#include <stdlib.h>
+
 /**
  * main - Entry
-* Return: 0
+ * Return: 0 (on success)
+ * Author: Mulugeta Z
+ *
+ * Description:
+ * Created:  Mon Feb 20 12:03:09 PM EAT 2023
+ * Filename: doubledigi.c
  */
 int main(void)
 {
-	int c;
-	int d = 0;
+	int left, right, cond;
 
-	while (d < 10)
+	left = 0;
+	for (; left < 10;)
 	{
-		c = 0;
-		while (c < 10)
+		right = 0;
+		for (; right < 10;)
 		{
-			if (d != c && d < c)
+			cond = (left != right) && (left < right);
+			if (cond)
 			{
-				putchar('0' + d);
-				putchar('0' + c);
-
-				if (c + d != 17)
-				{
-					putchar(',');
-					putchar(' ');
-				}
+				putchar(left + '0');
+				putchar(right + '0');
 			}
-
-			c++;
+			if (cond && left < 8)
+			{
+				putchar(',');
+				putchar(' ');
+			}
+			right++;
 		}
-		d++;
+		left++;
 	}
 	putchar('\n');
 	return (0);
 }
+
