@@ -11,12 +11,11 @@ int main(void)
 
 		while (c <= 102)
 		{
-			if (c <= 57 || c >= 67)
-				putchar(c);
 			if (c == 58)
 			{
-				c = 96;
+				c = 97;
 			}
+			putchar(c);
 			c++;
 		}
 
