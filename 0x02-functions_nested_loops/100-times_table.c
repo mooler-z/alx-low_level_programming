@@ -28,16 +28,17 @@ void print_times_table(int n)
 				}
 				else if (k < 10 && j != 0)
 				{
-					printf(",   %d", k);
+					printf(",   ");
 				}
 				else if (k >= 10 && k < 100)
 				{
-					printf(",  %d", k);
+					printf(",  ");
 				}
 				else if (k >= 100)
 				{
-					printf(", %d", k);
+					printf(", ");
 				}
+				printf("%d", k);
 			}
 			_putchar('\n');
 		}
