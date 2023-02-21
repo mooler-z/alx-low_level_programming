@@ -19,18 +19,7 @@ void times_table(void)
 		row = 0;
 		for (; row < 10;)
 		{
-			/* printf("%d",(col * row)); */
-			if ((col * row) < 10)
-			{
-				_putchar((col * row) + '0');
-			}
-			else
-			{
-				_putchar(((col * row) / 10) + '0');
-				_putchar(((col * row) % 10) + '0');
-
-			}
-			if (row < 9)
+			if ((col * row) > 0)
 			{
 				_putchar(',');
 				_putchar(' ');
@@ -38,7 +27,12 @@ void times_table(void)
 			if ((col * row) < 10)
 			{
 				_putchar(' ');
-				_putchar(' ');
+				_putchar((col * row) + '0');
+			}
+			else
+			{
+				_putchar(((col * row) / 10) + '0');
+				_putchar(((col * row) % 10) + '0');
 			}
 			row++;
 		}
