@@ -10,7 +10,7 @@
  * Created:  Tue Feb 21 05:26:34 PM EAT 2023
  * Filename: 100-times_table.c
  */
-void print_times_table(n)
+void print_times_table(int n)
 {
 	int i, j, k;
 	if (n >= 0 && n <= 15)
