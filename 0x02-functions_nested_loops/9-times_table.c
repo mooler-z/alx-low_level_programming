@@ -37,7 +37,8 @@ void times_table(void)
 			}
 			if ((col * row) < 10)
 			{
-				_putchar('  ');
+				_putchar(' ');
+				_putchar(' ');
 			}
 			row++;
 		}
