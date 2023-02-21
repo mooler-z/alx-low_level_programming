@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <main.h>
 
 /**
  * main - Entry
@@ -9,7 +9,7 @@
  * Created:  Tue Feb 21 02:50:06 PM EAT 2023
  * Filename: 1-alphabet.c
  */
-void main(void)
+void print_alphabet(void)
 {
 	char c = 97;
 
