@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - write a program that finds and prints the sum of the even-valued terms
+ * main - even fabs
  * Return: 0 (on success)
  * Author: Mulugeta Z
  *
