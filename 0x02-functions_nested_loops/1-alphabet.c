@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * main - Entry
+ * print_alphabet - Entry
  * Return: void
  * Author: Mulugeta Z
  *
@@ -15,7 +15,7 @@ void print_alphabet(void)
 
 	while (c <= 122)
 	{
-		_putchar(c + '0');
+		_putchar(c);
 		c++;
 	}
 	_putchar('\n');
