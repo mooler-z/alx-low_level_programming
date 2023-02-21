@@ -2,7 +2,7 @@
 
 /**
  * jack_bauer - Entry
- * Return: 0 (on success)
+ * Return: void
  * Author: Mulugeta Z
  *
  * Description: print 24 hours
