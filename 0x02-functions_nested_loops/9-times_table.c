@@ -19,20 +19,21 @@ void times_table(void)
 		row = 0;
 		for (; row < 10;)
 		{
-			
+			if (((col * row) > 0) || ((row != 0)))
+			{
+				_putchar(',');
+				_putchar(' ');
+			}
 			if ((col * row) < 10)
 			{
+				if ((col * row) > 0)
+					_putchar(' ');
 				_putchar((col * row) + '0');
 			}
 			else
 			{
 				_putchar(((col * row) / 10) + '0');
 				_putchar(((col * row) % 10) + '0');
-			}
-			if (((col * row) > 0) || ((row != 0)))
-			{
-				_putchar(',');
-				_putchar(' ');
 			}
 			row++;
 		}
