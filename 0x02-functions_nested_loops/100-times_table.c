@@ -28,7 +28,7 @@ void print_times_table(int n)
 				}
 				else if (k < 10 && j != 0)
 				{
-					printf(",\t");
+					printf(",  ");
 					printf("%d", k);
 				}
 				else if (k >= 10 && k < 100)
