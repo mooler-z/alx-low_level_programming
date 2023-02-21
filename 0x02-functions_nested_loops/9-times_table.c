@@ -35,10 +35,9 @@ void times_table(void)
 				_putchar(',');
 				_putchar(' ');
 			}
-			
 			if ((col * row) < 10)
 			{
-				_putchar(' ');
+				_putchar('  ');
 			}
 			row++;
 		}
