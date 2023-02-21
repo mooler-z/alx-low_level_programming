@@ -40,7 +40,7 @@ void print_times_table(int n)
 				}
 				printf("%d", k);
 			}
-			_putchar('\n');
+			printf('\n');
 		}
 	}
 }
