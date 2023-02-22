@@ -1,1 +1,1 @@
-## New era: programming in the latin of programming language C
+## Let us C!
