@@ -11,10 +11,10 @@
  */
 int main(void)
 {
-	int n;
+	int i;
 
-	n = 42;
-	positive_or_negative(n);
+	i = 42;
+	positive_or_negative(i);
 
 	return (0);
 }
