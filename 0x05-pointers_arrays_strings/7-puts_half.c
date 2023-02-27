@@ -19,7 +19,10 @@ void puts_half(char *str)
 	{}
 
 	if (len % 2 == 1)
+	{
+		len = len - 1
 		evenOdd = (len - 1) / 2;
+	}
 	else
 		evenOdd = len / 2;
 
