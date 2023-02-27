@@ -13,8 +13,7 @@
  */
 int main(void)
 {
-        int len = 100;
-	int pass[len];
+	int pass[100];
 	int i, sum, n;
 
 	sum = 0;	
