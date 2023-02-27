@@ -10,7 +10,7 @@
  * Created:  Mon Feb 27 03:42:19 PM EAT 2023
  * Filename: 100-atoi.c
  */
-int _atoi(int *s)
+int _atoi(char *s)
 {
 	int i, d, n, len, f, digit;
 
