@@ -11,7 +11,7 @@
  * Created:  Mon Feb 27 03:24:27 PM EAT 2023
  * Filename: 9-strcpy.c
  */
-char *_strcpy(char *src, char *dest)
+char *_strcpy(char *dest, char *src)
 {
 	int counter, len;
 
@@ -19,10 +19,13 @@ char *_strcpy(char *src, char *dest)
 	for (; src[len] != '\0'; len++)
 	{}
 
+	len--;
+
 	for (counter = 0; counter < len; counter++)
 		dest[counter] = src[counter];
 
 	dest[counter] = '\0';
+
 	return (dest);
 }
 
