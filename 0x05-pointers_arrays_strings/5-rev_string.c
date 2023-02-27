@@ -10,7 +10,7 @@
  * Created:  Mon Feb 27 02:17:43 PM EAT 2023
  * Filename: 5-rev_string.c
  */
-void rev_string(int *s)
+void rev_string(char *s)
 {
 	int looper, counter, reverser;
 	char tempCharacter;
