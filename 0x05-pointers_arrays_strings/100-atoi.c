@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * atoi - Entry
+ * _atoi - Entry
  * @s: string to be converted
  * Return: res int
  * Author: Mulugeta Z
@@ -10,7 +10,7 @@
  * Created:  Mon Feb 27 03:42:19 PM EAT 2023
  * Filename: 100-atoi.c
  */
-int atoi(int *s)
+int _atoi(int *s)
 {
 	int i, d, n, len, f, digit;
 
