@@ -13,17 +13,17 @@
  */
 void reverse_array(int *a, int n)
 {
-	int leftHalf, rightHalf, temp;
+	int leftHalf, rightHalf, temp, evenOdd;
 
 	leftHalf = 0;
 	rightHalf = n - 1;
+	evenOdd = n % 2 == 0 ? 1 : 0;
 
-	for (; leftHalf < rightHalf / 2; leftHalf++)
+	for (; (leftHalf + evenOdd) != rightHalf; leftHalf++, rightHalf--)
 	{
-		temp = a[rightHalf];
-		a[rightHalf] = a[leftHalf];
-		a[leftHalf] = temp;
-
+		temp = a[leftHalf];
+		a[leftHalf] = a[rightHalf];
+		a[rightHalf] = temp;
 	}
 }
 
