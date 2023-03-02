@@ -13,6 +13,7 @@ int main(void)
 {
 	/* revised and refactored code */
 	const int MAX = 10;
+	const int LAYERS = 2;
 	int outer, inner;
 
 	for (outer = 0; outer < MAX; outer++)
@@ -22,7 +23,7 @@ int main(void)
 			putchar(outer + '0');
 			putchar(inner + '0');
 
-			if (outer < MAX - 2)
+			if (outer < MAX - LAYERS)
 			{
 				putchar(',');
 				putchar(' ');
