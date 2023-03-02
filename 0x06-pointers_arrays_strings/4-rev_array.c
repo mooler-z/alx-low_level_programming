@@ -7,7 +7,7 @@
  * Return: void
  * Author: Mulugeta Z
  *
- * Description:
+ * Description: .
  * Created:  Thu Mar  2 04:52:51 PM EAT 2023
  * Filename: 4-rev_array.c
  */
