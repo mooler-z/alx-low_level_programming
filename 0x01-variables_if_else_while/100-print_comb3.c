@@ -7,33 +7,27 @@
  *
  * Description:
  * Created:  Mon Feb 20 12:03:09 PM EAT 2023
- * Filename: doubledigi.c
+ * Filename: 100-print_comb3.c
  */
 int main(void)
 {
-	int left, right, cond, i;
+	/* revised and refactored code */
+	const int MAX = 10;
+	int outer, inner;
 
-	left = 0;
-	i = 10;
-	for (; left < i;)
+	for (outer = 0; outer < MAX; outer++)
 	{
-		right = 0;
-		for (; right < i;)
+		for (inner = outer + 1; inner < MAX; inner++)
 		{
-			cond = (left != right) && (left < right);
-			if (cond)
-			{
-				putchar(left + '0');
-				putchar(right + '0');
-			}
-			if (cond && (left < i - 2))
+			putchar(outer + '0');
+			putchar(inner + '0');
+
+			if (outer < MAX - 2)
 			{
 				putchar(',');
 				putchar(' ');
 			}
-			right++;
 		}
-		left++;
 	}
 	putchar('\n');
 	return (0);
