@@ -5,25 +5,24 @@
  */
 int main(void)
 {
-	int i, j;
+	const int MAX = 100;
+	const int LAYERS = 2;
+	int outer, inner;
 
-	for (i = 0; i <= 99; i++)
+	for (outer = 0; outer < MAX; outer++)
 	{
-		for (j = i; j <= 99; j++)
+		for (inner = outer + 1; inner < MAX; inner++)
 		{
-			if (j != i)
-			{
-				putchar(i / 10 + 48);
-				putchar(i % 10 + 48);
-				putchar(' ');
-				putchar(j / 10 + 48);
-				putchar(j % 10 + 48);
+			putchar((outer / 10) + '0');
+			putchar((outer % 10) + '0');
+			putchar(' ');
+			putchar((inner / 10) + '0');
+			putchar((inner % 10) + '0');
 
-				if (i * 100 + j != 9899)
-				{
-					putchar(',');
-					putchar(' ');
-				}
+			if (outer < MAX - LAYERS)
+			{
+				putchar(',');
+				putchar(' ');
 			}
 		}
 	}
