@@ -11,37 +11,29 @@
  */
 int main(void)
 {
-	int left, mid, right, cond, i;
+	const int MAX = 10;
+	const int LAYERS = 3;
+	int outer, mid, inner;
 
-	left = 0;
-	i = 10;
-	for (; left < i;)
+	for (outer = 0; outer < MAX; outer++)
 	{
-		mid = 0;
-		for (; mid < i;)
+		for (mid = outer + 1; mid < MAX; mid++)
 		{
-			right = 0;
-			for (; right < i;)
+			for (inner = mid + 1; inner < MAX; inner++)
 			{
-				/* printf("left(%d) | mid(%d) | right(%d)\n", left, mid, right); */
-				cond = ((left < mid) && (mid < right));
-				if (cond)
-				{
-					putchar(left + '0');
-					putchar(mid + '0');
-					putchar(right + '0');
-				}
-				if (cond && (left < i - 3))
+				putchar(outer + '0');
+				putchar(mid + '0');
+				putchar(inner + '0');
+
+				if (outer < MAX - LAYERS)
 				{
 					putchar(',');
 					putchar(' ');
 				}
-				right++;
 			}
-			mid++;
 		}
-		left++;
 	}
+
 	putchar('\n');
 	return (0);
 }
