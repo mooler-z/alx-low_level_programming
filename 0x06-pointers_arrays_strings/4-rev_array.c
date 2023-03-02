@@ -19,7 +19,7 @@ void reverse_array(int *a, int n)
 	rightHalf = n - 1;
 	evenOdd = n % 2 == 0 ? 1 : 0;
 
-	for (; (leftHalf + evenOdd) != rightHalf; leftHalf++, rightHalf--) 
+	for (; (leftHalf + evenOdd) != rightHalf; leftHalf++, rightHalf--)
 	{
 		temp = a[rightHalf];
 		a[rightHalf] = a[leftHalf];
