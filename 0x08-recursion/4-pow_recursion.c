@@ -8,7 +8,7 @@
  * Author: Mulugeta Z
  *
  * Description:
- * Created:  Wed Mar  8 07:51:15 AM EAT 2023
+ * Created:  Wed Mar  8 07:59:15 AM EAT 2023
  * Filename: 4-pow_recursion.c
  */
 int _pow_recursion(int x, int y)
